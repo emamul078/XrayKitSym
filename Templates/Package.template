@@ -1,0 +1,17 @@
+
+import PackageDescription
+
+let package = Package(
+  name: "XrayKitSym",
+  platforms: [.iOS(.v12), .macOS(.v12)],
+  products: [
+    .library(name: "XrayKitSym", targets: ["XrayKitSym"])
+  ],
+  targets: [
+    .binaryTarget(
+      name: "XrayKitSym",
+      url: "https://github.com/Cross-Kit/XrayKitSym/releases/download/0.1.2/XrayKit.xcframework.zip",
+      checksum: "CHECKSUM"
+    )
+  ]
+)                   
